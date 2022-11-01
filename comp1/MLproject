@@ -1,0 +1,17 @@
+name: KNN_project
+conda_env: conda.yml
+
+entry_points:
+  main:
+    parameters:
+      neighbour:
+        description: The number of neighbour values
+        type: int
+      weights:
+        description: Weight type of KNN algorithm
+        type: str
+      leaf:
+        description: The leaf size in KNN algorithm
+        type: int
+    command: >-
+      python run.py --neighbour {neighbour} --weights {weights} --leaf {leaf}
