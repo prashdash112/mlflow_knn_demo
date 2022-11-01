@@ -1,0 +1,14 @@
+name: KNN_main
+conda_env: conda.yml
+
+entry_points:
+  main:
+    parameters:
+      hydra_options:
+          description: Hydra values to override
+          type: str
+          default: ''
+    command: >-
+      python main.py
+      
+  

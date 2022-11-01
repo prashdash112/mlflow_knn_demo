@@ -1,0 +1,7 @@
+main:
+  project_name: KNN_1
+  experiment_name: dev
+KNN:
+  neighbour: 5
+  weights: uniform
+  leaf: 30
